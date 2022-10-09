@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ISABELA_CAOVILA_RM84141</string>
+    <string name="download_button_label">DOWNLOAD</string>
+    <string name="start_button_label">INICIAR</string>
+    <string name="pause_button_label">PAUSAR</string>
+    <string name="resume_button_label">RETOMAR</string>
+    <string name="button_go_back">VOLTAR</string>
+    <string name="text_download_finished">Download realizado com sucesso!</string>
+    <string name="download_fragment_label">Download</string>
+    <string name="download_finished_fragment_label">Download finished</string>
+</resources>

@@ -5,6 +5,7 @@
     <string name="pause_button_label">PAUSAR</string>
     <string name="resume_button_label">RETOMAR</string>
     <string name="button_go_back">VOLTAR</string>
+    <string name="text_welcome_message">Olá, professor Rafael!\n Bem vindo ao App simulador de downloads</string>
     <string name="text_download_finished">Download realizado com sucesso!</string>
     <string name="download_fragment_label">Download</string>
     <string name="download_finished_fragment_label">Download finished</string>

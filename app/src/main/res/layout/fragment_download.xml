@@ -4,53 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DownloadActivity">
+    tools:context=".DownloadFragment">
+
+    <TextView
+        android:id="@+id/text_view_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_welcome_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/spacing_lg"
+        />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_start_progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/start_button_label"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/spacing_xxxxxxxxxl"
         android:layout_marginTop="@dimen/spacing_md"
-        android:layout_marginStart="@dimen/spacing_xxxxl"
-        />
+        android:background="@drawable/gradient"
+        android:text="@string/start_button_label"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/label_percentage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_pause_progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pause_button_label"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="@dimen/spacing_md"
-        android:layout_marginEnd="@dimen/spacing_xxxxl"
-        />
+        android:layout_marginEnd="@dimen/spacing_xxxxxxxxxl"
+        android:background="@drawable/gradient"
+        android:text="@string/pause_button_label"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/label_percentage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/label_percentage"
+        style="@style/TextAppearance.AppCompat.Body2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/button_start_progress"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="@dimen/spacing_md"
-        android:layout_marginTop="@dimen/spacing_xl"
+        android:layout_marginBottom="@dimen/spacing_lg"
         android:textSize="@dimen/font_size_md"
-        tools:text="40%"
-        style="@style/TextAppearance.AppCompat.Body2"
-        />
+        app:layout_constraintBottom_toTopOf="@+id/launch_progress_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="40%" />
 
     <com.google.android.material.progressindicator.LinearProgressIndicator
         android:id="@+id/launch_progress_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_md"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="@dimen/spacing_md"
-        android:layout_marginHorizontal="@dimen/spacing_md"
-        app:layout_constraintTop_toBottomOf="@+id/label_percentage"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

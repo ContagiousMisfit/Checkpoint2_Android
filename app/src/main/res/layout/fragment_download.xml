@@ -6,24 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".DownloadFragment">
 
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/gif_welcome"
+        android:layout_marginTop="@dimen/spacing_sm"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/text_view_id"
+        style="@style/TextAppearance.AppCompat.Body2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_xxxxxxxxxl"
+        android:gravity="center"
         android:text="@string/text_welcome_message"
+        app:layout_constraintBottom_toTopOf="@+id/label_percentage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center"
-        android:layout_marginTop="@dimen/spacing_lg"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_start_progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/spacing_xxxxxxxxxl"
-        android:layout_marginTop="@dimen/spacing_md"
+        android:layout_marginTop="@dimen/spacing_xxxxxxxxxxl"
         android:background="@drawable/gradient"
         android:text="@string/start_button_label"
         app:backgroundTint="@null"
@@ -35,7 +45,7 @@
         android:id="@+id/button_pause_progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/spacing_md"
+        android:layout_marginTop="@dimen/spacing_xxxxxxxxxxl"
         android:layout_marginEnd="@dimen/spacing_xxxxxxxxxl"
         android:background="@drawable/gradient"
         android:text="@string/pause_button_label"
@@ -50,11 +60,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/spacing_md"
-        android:layout_marginBottom="@dimen/spacing_lg"
         android:textSize="@dimen/font_size_md"
-        app:layout_constraintBottom_toTopOf="@+id/launch_progress_bar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/launch_progress_bar"
+        android:layout_marginTop="@dimen/spacing_md"
         tools:text="40%" />
 
     <com.google.android.material.progressindicator.LinearProgressIndicator
@@ -65,6 +75,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/spacing_xxxxxxxxl"
+
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

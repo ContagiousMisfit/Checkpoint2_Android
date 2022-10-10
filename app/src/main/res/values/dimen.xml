@@ -13,7 +13,7 @@
     <dimen name="spacing_xxxxxxxl">80dp</dimen>
     <dimen name="spacing_xxxxxxxxl">88dp</dimen>
     <dimen name="spacing_xxxxxxxxxl">96dp</dimen>
-
+    <dimen name="spacing_xxxxxxxxxxl">240dp</dimen>
 
     <dimen name="font_size_xxxs">12sp</dimen>
     <dimen name="font_size_xxs">14sp</dimen>

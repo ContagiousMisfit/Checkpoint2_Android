@@ -13,7 +13,6 @@ class DownloadFinishedFragment: Fragment() {
 
     private lateinit var binding: FragmentDownloadFinishedBinding
     private var launch: Job? = null
-    //private var isDownloadPaused = false
 
     override fun onCreateView(
         inflater: LayoutInflater,
